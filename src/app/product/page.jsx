@@ -13,7 +13,7 @@ import Menu from "../../components/Menu";
 
 
 
-const page = () => {
+const Page = () => {
   const [translateXValue, setTranslateXValue] = useState(0); 
   const [allTemp1, setTemp1] = useState()
   const [allTemp2, setTemp2] = useState() 
@@ -185,7 +185,7 @@ const page = () => {
                                 {imgs && imgs?.length > 0 ? (
 
                                   imgs.map((item) => (
-                                    <div>
+                                    <div key={item.id}>
                                       <div className="HtmlProductInfiniteGallery__Slides_Slide">
                                         <div className="Slide Slide--image">
                                           <img
@@ -221,7 +221,7 @@ const page = () => {
 
                           {imgs && imgs?.length > 0 ? (
                             imgs.map((item, idx) => (
-                              <button onClick={() => handleClick(idx)} className="Thumbnail Thumbnail--image">
+                              <button key={idx} onClick={() => handleClick(idx)} className="Thumbnail Thumbnail--image">
                                 <img
                                   src={item}
                                 />
@@ -402,4 +402,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

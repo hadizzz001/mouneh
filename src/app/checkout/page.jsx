@@ -11,7 +11,7 @@ import Menu from "../../components/Menu";
 import WhatsAppButton from "../../components/WhatsApp";
 
 
-const page = () => {
+const Page = () => {
   // const [selectedOption, setSelectedOption] = useState(7.5);
   const { cart, removeFromCart, updateQuantity, isModalOpen, toggleModal } = useCart();
   const [phone, setPhone] = useState('');
@@ -1124,4 +1124,4 @@ const page = () => {
   )
 
 }
-export default page
+export default Page

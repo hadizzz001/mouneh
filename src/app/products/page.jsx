@@ -43,7 +43,7 @@ export default function ProductsPage() {
                     {allTemp && allTemp?.length > 0 ? (
                         allTemp.map((item) => (
 
-                            <a href={`/product?id=${item.id}`}>
+                            <a key={item.id} href={`/product?id=${item.id}`}>
                                 <div
                                     className="flex flex-col justify-center items-center"
                                     key={item.title}
