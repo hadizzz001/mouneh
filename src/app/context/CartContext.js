@@ -29,7 +29,7 @@ const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, [], (initial) => {
     if (typeof window !== "undefined") {
       try {
-        storedCart = localStorage.getItem('cart');
+        storedCart =  typeof window !== "undefined" ? localStorage.getItem('cart') : "";
         return storedCart ? JSON.parse(storedCart) : initial;
       } catch (error) {
         console.error('Error parsing cart from localStorage:', error);
@@ -38,7 +38,7 @@ const CartProvider = ({ children }) => {
     } 
   });
   const [quantities, setQuantities] = useState(() => {
-    const storedQuantities = localStorage.getItem('quantities');
+    const storedQuantities =  typeof window !== "undefined" ? localStorage.getItem('quantities') : "";
     return storedQuantities ? JSON.parse(storedQuantities) : {};
   });
   const [subtotal, setSubtotal] = useState(0);
