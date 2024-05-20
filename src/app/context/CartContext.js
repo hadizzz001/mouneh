@@ -27,20 +27,22 @@ let storedCart;
 
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, [], (initial) => {
-    if (typeof window !== "undefined") {
-      try {
-        storedCart =  localStorage.getItem('cart');
-        return storedCart ? JSON.parse(storedCart) : initial;
-      } catch (error) {
-        console.error('Error parsing cart from localStorage:', error);
-        return initial;
+
+    try {
+      if (typeof window !== "undefined") {
+        storedCart = localStorage.getItem('cart');
       }
-    } 
+      return storedCart ? JSON.parse(storedCart) : initial;
+    } catch (error) {
+      console.error('Error parsing cart from localStorage:', error);
+      return initial;
+    }
+
   });
   const [quantities, setQuantities] = useState(() => {
     if (typeof localStorage !== 'undefined') {
-    const storedQuantities =  localStorage.getItem('quantities');
-    return storedQuantities ? JSON.parse(storedQuantities) : {};
+      const storedQuantities = localStorage.getItem('quantities');
+      return storedQuantities ? JSON.parse(storedQuantities) : {};
     }
   });
   const [subtotal, setSubtotal] = useState(0);
@@ -48,13 +50,13 @@ const CartProvider = ({ children }) => {
 
   useEffect(() => {
     if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('cart', JSON.stringify(cart));
+      localStorage.setItem('cart', JSON.stringify(cart));
     }
   }, [cart]);
 
   useEffect(() => {
     if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('quantities', JSON.stringify(quantities));
+      localStorage.setItem('quantities', JSON.stringify(quantities));
     }
   }, [quantities]);
 
@@ -80,10 +82,10 @@ const CartProvider = ({ children }) => {
         payload: cart.map((cartItem) =>
           String(cartItem.id) === String(item.id)
             ? {
-                ...cartItem,
-                quantity: quantity || 1,
-                additionalInfo: additionalInfo || cartItem.additionalInfo,
-              }
+              ...cartItem,
+              quantity: quantity || 1,
+              additionalInfo: additionalInfo || cartItem.additionalInfo,
+            }
             : cartItem
         ),
       });

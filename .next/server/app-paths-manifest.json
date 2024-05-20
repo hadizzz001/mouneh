@@ -7,7 +7,7 @@
   "/page": "app/page.js",
   "/product/page": "app/product/page.js",
   "/products/page": "app/products/page.js",
-  "/api/posts3/[id]/route": "app/api/posts3/[id]/route.js",
   "/api/posts/[id]/route": "app/api/posts/[id]/route.js",
+  "/api/posts3/[id]/route": "app/api/posts3/[id]/route.js",
   "/api/posts/route": "app/api/posts/route.js"
 }

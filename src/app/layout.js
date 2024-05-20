@@ -1,8 +1,10 @@
- 
+
 
 // app/layout.js
+
 import './globals.css';
 import { CartProvider } from './context/CartContext'; 
+import { Suspense } from "react";
 
 export default function RootLayout({ children }) {
   return (
@@ -44,9 +46,11 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className="bg-primary">
+      <Suspense>
         <CartProvider>
           {children}
         </CartProvider>
+        </Suspense>
       </body>
     </html>
   );
