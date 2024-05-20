@@ -1051,7 +1051,7 @@ const Page = () => {
               </div>
               <p className="EmptyCartBlurb">You have no items in your shopping cart.</p>
               <a
-                href="/products" 
+                href="/products"
               >
                 <span className="ProvidersSingleProduct--selected1" >
                   <button type="button" className="AddToCart HtmlProductAddToCart" style={{ borderRadius: "0" }}  >
@@ -1064,12 +1064,12 @@ const Page = () => {
           </center>
         )}
 
-<style
-  dangerouslySetInnerHTML={{
-    __html:
-      "\n          .ProvidersSingleProduct--selected1{\n            display:block ;\n       width:500px  ;\n     }\n   @media (max-width: 600px) {\n     .ProvidersSingleProduct--selected1{\n       width:100%;\n     }\n   }\n\n\n"
-  }}
-/>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n          .ProvidersSingleProduct--selected1{\n            display:block ;\n       width:500px  ;\n     }\n   @media (max-width: 600px) {\n     .ProvidersSingleProduct--selected1{\n       width:100%;\n     }\n   }\n\n\n"
+          }}
+        />
 
 
 
@@ -1118,18 +1118,25 @@ const Page = () => {
 
         <Footer />
         <style
-  dangerouslySetInnerHTML={{
-    __html:
-      "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;\n}\n}\n"
-  }}
-/>
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;\n}\n}\n"
+          }}
+        />
 
-<style
-  dangerouslySetInnerHTML={{
-    __html:
-      '\n  @media only screen and (max-width: 600px) {\n.button, button, input[type="button"], input[type="reset"], input[type="submit"] {\n \n    color: rgb(67 20 7 / 0.6); \n    padding:0;\n}\n}\n'
-  }}
-/>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              '\n  @media only screen and (max-width: 600px) {\n.button, button, input[type="button"], input[type="reset"], input[type="submit"] {\n \n    color: rgb(67 20 7 / 0.6); \n    padding:0;\n}\n}\n'
+          }}
+        />
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              '\n  \n.button, button, input[type="button"], input[type="reset"], input[type="submit"] {\n \n    color: rgb(67 20 7 / 0.6);  \n}\n \n'
+          }}
+        />
 
 
       </div>
