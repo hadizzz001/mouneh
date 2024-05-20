@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
           content="Our passion for preserving the timeless traditions of Lebanese cuisine is infused into every jar of Labneh, every jar of olives, every spoonful of jams, and every drop of fragrant flower water we meticulously craft."
           property="og:description"
         />
+        <link rel="icon" href="icons/icon.ico" sizes="any" />
         <meta content="icons/logo.jpg" property="og:image" />
         <link href="icons/icon.png" rel="apple-touch-icon" sizes="180x180" />
         <link href="icons/icon.png" rel="icon" sizes="32x32" type="image/png" />
