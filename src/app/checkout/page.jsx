@@ -1117,6 +1117,21 @@ const Page = () => {
 
 
         <Footer />
+        <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;\n}\n}\n"
+  }}
+/>
+
+<style
+  dangerouslySetInnerHTML={{
+    __html:
+      '\n  @media only screen and (max-width: 600px) {\n.button, button, input[type="button"], input[type="reset"], input[type="submit"] {\n \n    color: rgb(67 20 7 / 0.6); \n    padding:0;\n}\n}\n'
+  }}
+/>
+
+
       </div>
 
     </>

@@ -13,10 +13,7 @@ export default function RootLayout({ children }) {
         <meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
         <meta content="en" httpEquiv="Content-Language" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-        <meta
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-          name="viewport"
-        />
+        <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <meta content="max-image-preview:large" name="robots" />
         <title>Mouneh w Zeytouneh</title>
         <meta
@@ -31,10 +28,10 @@ export default function RootLayout({ children }) {
           content="Our passion for preserving the timeless traditions of Lebanese cuisine is infused into every jar of Labneh, every jar of olives, every spoonful of jams, and every drop of fragrant flower water we meticulously craft."
           property="og:description"
         />
-        <meta content="/logo.png" property="og:image" />
-        <link href="/favicon" rel="apple-touch-icon" sizes="180x180" />
-        <link href="/favicon" rel="icon" sizes="32x32" type="image/png" />
-        <link href="/favicon" rel="icon" sizes="16x16" type="image/png" />
+        <meta content="icons/logo.jpg" property="og:image" />
+        <link href="icons/icon.png" rel="apple-touch-icon" sizes="180x180" />
+        <link href="icons/icon.png" rel="icon" sizes="32x32" type="image/png" />
+        <link href="icons/icon.png" rel="icon" sizes="16x16" type="image/png" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta content="#ffffff" name="theme-color" />
         <style

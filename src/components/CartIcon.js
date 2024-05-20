@@ -1,4 +1,4 @@
-// components/CartIcon.js
+ 
 import { useCart } from '../../src/app/context/CartContext';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Badge from '@mui/material/Badge';
@@ -6,8 +6,9 @@ import styled from 'styled-components';
 
  
 
+ 
 const CartButton = styled.button`
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   background: none;
@@ -17,12 +18,12 @@ const CartButton = styled.button`
 `;
 
 const CartIcon = () => {
-  const { cart, toggleModal } = useCart();
+  const { cart, toggleModal } = useCart(); 
 
   return (
     <CartButton onClick={toggleModal}>
       <Badge badgeContent={cart.length} color="error">
-        <ShoppingCartIcon fontSize="large" />
+        <ShoppingCartIcon fontSize="medium" />
       </Badge>
     </CartButton>
   );

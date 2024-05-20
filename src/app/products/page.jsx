@@ -70,6 +70,12 @@ export default function ProductsPage() {
                 </div>
             </Section>
             <Footer />
+            <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;\n}\n}\n"
+  }}
+/>
         </div>
     );
 }
