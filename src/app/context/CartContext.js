@@ -38,18 +38,24 @@ const CartProvider = ({ children }) => {
     } 
   });
   const [quantities, setQuantities] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
     const storedQuantities =  localStorage.getItem('quantities');
     return storedQuantities ? JSON.parse(storedQuantities) : {};
+    }
   });
   const [subtotal, setSubtotal] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
+    if (typeof localStorage !== 'undefined') {
     localStorage.setItem('cart', JSON.stringify(cart));
+    }
   }, [cart]);
 
   useEffect(() => {
+    if (typeof localStorage !== 'undefined') {
     localStorage.setItem('quantities', JSON.stringify(quantities));
+    }
   }, [quantities]);
 
   useEffect(() => {
