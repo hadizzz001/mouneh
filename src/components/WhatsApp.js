@@ -1,13 +1,39 @@
 "use client";
 import { useCart } from '../app/context/CartContext';
+import  prisma  from "../../libs/prismadb";
 
 
 
 const WhatsAppButton = ({ inputs, items }) => {
     const { cart, removeFromCart, updateQuantity, clearCart, isModalOpen, toggleModal } = useCart();
-    const handleClick = () => {
+
+ 
+    const createOrder =  () => {
+
+        const couponResponse = fetch('api/sendOrder', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+
+            body: JSON.stringify({
+                items,
+                inputs 
+            })
+        })
+
+        
+      };
+
+
+
+
+
+
+    const handleClick = async() => {
         const url = createWhatsAppURL(inputs, items);
         window.open(url, '_blank');
+        createOrder()
         clearCart()
     };
 
