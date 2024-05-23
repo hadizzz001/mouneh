@@ -2,6 +2,8 @@
 import prisma from "../../../../prisma";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 export async function main() {
     try {
         await prisma.$connect();
