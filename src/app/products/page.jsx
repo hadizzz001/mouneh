@@ -54,6 +54,7 @@ export default function ProductsPage() {
                                         className="w-96"
                                     />
                                     <p className="pt-3 pb-1">{item.title}</p>
+                                    <p className="pt-3 pb-1">{item.description}</p>
                                     <p className="font-bold">${item.price}</p>
                                 </div>
                             </a>

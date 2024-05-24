@@ -591,6 +591,9 @@ video {
 .mt-40 {
   margin-top: 10rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -630,6 +633,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .min-h-\[510px\] {
   min-height: 510px;
 }
@@ -659,6 +665,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .max-w-\[70vw\] {
   max-width: 70vw;
@@ -710,6 +719,9 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -765,6 +777,9 @@ video {
 }
 .bg-\[url\(\'\/images\/genesisbg\.webp\'\)\] {
   background-image: url('/images/genesisbg.webp');
+}
+.bg-\[url\(\'\/icons\/phone\.svg\'\)\] {
+  background-image: url('/icons/phone.svg');
 }
 .bg-\[length\:2560px_605px\] {
   background-size: 2560px 605px;
