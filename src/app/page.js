@@ -21,6 +21,14 @@ export default function Home() {
       <ContactSection />
       <Footer />
     </main>
+    <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n  \n@media screen and (min-width: 1000px) {\n    #mylogo123 {\n      width:150px;\n    }\n}\n\n"
+  }}
+/>
+<style dangerouslySetInnerHTML={{ __html: "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n padding: 2em;\n}\n}\n" }} />
+
     </>
   );
 }

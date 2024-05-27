@@ -19,11 +19,11 @@ export default function Footer() {
                     href="https://www.instagram.com/mounehwzeytouneh.lb/"
                     className="w-10 h-10 bg-[url('/icons/ig.svg')] bg-no-repeat hover:bg-[url('/icons/ig2.svg')] hover:bg-[length:100%] bg-center rounded-full"
                 ></a>
-<div className="flex items-center">
+<div className="flex ">
     <a 
         className="w-10 h-10 bg-[url('/icons/phone.svg')] bg-no-repeat bg-center rounded-full"
     ></a>
-    <p className="ml-2">+961 81 352 620</p>
+    <p className="ml-2" style={{fontSize:"18px"}}>+961 81 352 620</p>
 </div>
 
 

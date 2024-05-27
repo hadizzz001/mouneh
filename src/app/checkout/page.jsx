@@ -1118,11 +1118,11 @@ const Page = () => {
 
         <Footer />
         <style
-          dangerouslySetInnerHTML={{
-            __html:
-              "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;\n}\n}\n"
-          }}
-        />
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n  @media only screen and (max-width: 600px) {\n#mylogo123 { \n  width:15em !important;margin-top: 4em;\n}\n}\n"
+  }}
+/>
 
         <style
           dangerouslySetInnerHTML={{

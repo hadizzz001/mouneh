@@ -524,9 +524,6 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
-}
 .left-0 {
   left: 0px;
 }
@@ -585,14 +582,14 @@ video {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .mt-10 {
   margin-top: 2.5rem;
 }
 .mt-40 {
   margin-top: 10rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
 }
 .block {
   display: block;
@@ -611,6 +608,9 @@ video {
 }
 .hidden {
   display: none;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .h-20 {
   height: 5rem;
@@ -633,14 +633,14 @@ video {
 .h-full {
   height: 100%;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .min-h-\[510px\] {
   min-height: 510px;
 }
 .min-h-full {
   min-height: 100%;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .w-16 {
   width: 4rem;
@@ -665,9 +665,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-10 {
-  width: 2.5rem;
 }
 .max-w-\[70vw\] {
   max-width: 70vw;
@@ -705,23 +702,20 @@ video {
 .justify-around {
   justify-content: space-around;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
 .gap-32 {
   gap: 8rem;
 }
-.gap-4 {
-  gap: 1rem;
-}
 .gap-5 {
   gap: 1.25rem;
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -772,14 +766,14 @@ video {
 .bg-\[url\(\'\/icons\/ig\.svg\'\)\] {
   background-image: url('/icons/ig.svg');
 }
+.bg-\[url\(\'\/icons\/phone\.svg\'\)\] {
+  background-image: url('/icons/phone.svg');
+}
 .bg-\[url\(\'\/icons\/wa\.svg\'\)\] {
   background-image: url('/icons/wa.svg');
 }
 .bg-\[url\(\'\/images\/genesisbg\.webp\'\)\] {
   background-image: url('/images/genesisbg.webp');
-}
-.bg-\[url\(\'\/icons\/phone\.svg\'\)\] {
-  background-image: url('/icons/phone.svg');
 }
 .bg-\[length\:2560px_605px\] {
   background-size: 2560px 605px;
