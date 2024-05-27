@@ -27,29 +27,36 @@ let storedCart;
 
 const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, [], (initial) => {
-    if (typeof window !== "undefined") {
+    
       try {
+        if (typeof window !== "undefined") {
         storedCart = localStorage.getItem('cart');
+        }
         return storedCart ? JSON.parse(storedCart) : initial;
       } catch (error) {
         console.error('Error parsing cart from localStorage:', error);
         return initial;
-      }
-    } 
+      } 
   });
   const [quantities, setQuantities] = useState(() => {
+    if (typeof window !== "undefined") {
     const storedQuantities = localStorage.getItem('quantities');
     return storedQuantities ? JSON.parse(storedQuantities) : {};
+    }
   });
   const [subtotal, setSubtotal] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
     localStorage.setItem('cart', JSON.stringify(cart));
+    }
   }, [cart]);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
     localStorage.setItem('quantities', JSON.stringify(quantities));
+    }
   }, [quantities]);
 
   useEffect(() => {
@@ -120,8 +127,10 @@ const CartProvider = ({ children }) => {
   const clearCart = () => {
     dispatch({ type: 'CLEAR_CART' });
     setQuantities({});
+    if (typeof window !== "undefined") {
     localStorage.removeItem('cart');
     localStorage.removeItem('quantities');
+    }
   };
 
   const toggleModal = () => {
