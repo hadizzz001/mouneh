@@ -761,9 +761,7 @@ const Page = () => {
                         </button>
                       </span> */}
 
-
-
-
+ 
 
 
 
@@ -787,7 +785,7 @@ const Page = () => {
                           </div>
                         </div>
                       </div>
-
+                      <p style={{color:'red'}}>Note: cash on delivery payment</p>
                       <div
                         className="elementor-element elementor-element-8ca5397 elementor-widget elementor-widget-spacer"
                         data-id="8ca5397"
